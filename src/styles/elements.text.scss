@@ -1,0 +1,16 @@
+p {
+  margin: 0;
+  color: grey(600);
+  line-height: lineHeight(1.5);
+}
+
+strong {
+  color: grey(900);
+  font-weight: 500;
+}
+
+a {
+  color: color("bubblegum");
+  text-decoration: none;
+  transition: color 0.2s;
+}

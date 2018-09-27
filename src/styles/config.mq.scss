@@ -1,0 +1,21 @@
+@mixin break($size) {
+  $breakpoints: (
+    320: 320px,
+    480: 480px,
+    540: 540px,
+    760: 760px,
+    960: 960px,
+    1200: 1200px,
+  );
+
+  @if (map-has-key($breakpoints, $size)) {
+    @media (min-width: map-get($breakpoints, $size)) {
+      @content;
+    }
+  } @else {
+    @warn "$size doesn't exist in $breakpoints.";
+    @media (min-width: defaultMapValue($breakpoints)) {
+      @content;
+    }
+  }
+}

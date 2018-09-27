@@ -1,0 +1,9 @@
+/**
+ * Returns the first value in a map
+ * @param {Map} $map
+ */
+@function defaultMapValue($map) {
+  $keys: map-keys($map);
+  $defaultKey: nth($keys, 1);
+  @return map-get($map, $defaultKey);
+}

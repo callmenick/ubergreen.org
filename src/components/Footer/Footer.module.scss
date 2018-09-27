@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  background-color: #00a85d;
+
+  .email {
+    color: #1B5E20;
+    font-size: 1.8rem;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .copyright {
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+}
