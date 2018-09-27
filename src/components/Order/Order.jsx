@@ -79,6 +79,7 @@ class Order extends Component {
           <input
             className={css.email}
             type="email"
+            name="email"
             placeholder="Your email address"
             required
           />
