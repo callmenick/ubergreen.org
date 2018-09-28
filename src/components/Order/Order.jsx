@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import axios from 'axios';
+import uniq from 'lodash/uniq';
 import css from 'components/Order/Order.module.scss';
 
 const SENDGRID_API_KEY =
@@ -8,36 +8,54 @@ const SENDGRID_API_KEY =
 
 const items = [
   {
-    id: 1,
-    title: 'Cacao nibs (50/200 gr)',
+    id: uniq(),
+    title: 'Cacao nibs (50g)',
+    price: '$20'
   },
   {
-    id: 2,
-    title: 'Chocolate banana bread with nibs',
+    id: uniq(),
+    title: 'Cacao nibs (200g)',
+    price: '$65'
   },
   {
-    id: 3,
-    title: 'Chocolate banana bread without nibs',
+    id: uniq(),
+    title: 'Chocolate banana bread with nibs (pack of 3)',
+    price: '$35',
   },
   {
-    id: 4,
-    title: 'Chocolate banana bread (with eggs/without eggs)',
+    id: uniq(),
+    title: 'Chocolate banana bread without nibs (pack of 3)',
+    price: '$35',
   },
   {
-    id: 5,
-    title: 'Chocolate cupcakes (with and without eggs and nibs)',
+    id: uniq(),
+    title: 'Chocolate banana bread without eggs (pack of 3)',
+    price: '$35',
   },
   {
-    id: 6,
-    title: 'Chocolate cereal clusters (with and without nibs)',
+    id: uniq(),
+    title: 'Chocolate cupcakes without eggs and nibs (pack of 3)',
+    price: '$35',
   },
   {
-    id: 7,
-    title: 'Chocolate with sorrel filling ',
+    id: uniq(),
+    title: 'Chocolate cereal clusters with nibs (100g)',
+    price: '$60',
   },
   {
-    id: 8,
-    title: 'Chocolate with nibs',
+    id: uniq(),
+    title: 'Chocolate cereal clusters without nibs (100g)',
+    price: '$60',
+  },
+  {
+    id: uniq(),
+    title: 'Chocolate with sorrel filling (box of 4)',
+    price: '$40',
+  },
+  {
+    id: uniq(),
+    title: 'Chocolate with nibs (3 x 30g)',
+    price: '$100',
   },
 ];
 
@@ -55,7 +73,7 @@ class Order extends Component {
           </h2>
           <p className={css.subHeading}>
             Fill out the form below to make an inquiry, and we’ll be in touch
-            shortly.
+            shortly. All prices are in <strong>TTD</strong>.
           </p>
         </header>
         <form
@@ -66,6 +84,7 @@ class Order extends Component {
           {items.map((item) => (
             <div key={item.id} className={css.item}>
               <span className={css.title}>{item.title}</span>
+              <span className={css.price}>{item.price}</span>
               <div className={css.quantity}>
                 <input
                   className={css.input}

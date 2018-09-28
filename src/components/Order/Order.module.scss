@@ -38,6 +38,10 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
+
+  strong {
+    font-weight: 900;
+  }
 }
 
 .form {
@@ -63,7 +67,18 @@
   letter-spacing: 2px;
 }
 
+.price {
+  margin-left: 4rem;
+  flex: 0 0 9rem;
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 .quantity {
+  margin-left: 4rem;
   flex: 0 0 9rem;
 }
 
