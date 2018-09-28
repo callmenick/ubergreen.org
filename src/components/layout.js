@@ -28,7 +28,7 @@ const Layout = ({ children }) => (
             {
               name: 'description',
               content:
-                'Ubergreen’s mission is to support small-scale Caribbean producers who are focused on flavour, quality, and fair trade over mass production.',
+                'Ubergreen’s mission is to support small-scale Caribbean producers who are focused on flavour, quality, and fairly sourced cocoa.',
             },
           ]}
         >

@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Ubergreen - Fair Trade True Trinitario Cocoa',
-    siteUrl: 'http://ubergreen.org',
+    title: 'Ubergreen - Fairly Sourced True Trinitario Cocoa',
   },
   pathPrefix: '/ubergreen.org',
   plugins: [
