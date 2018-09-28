@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import Header from 'components/Header/Header';
 import Hero from 'components/Hero/Hero';
+import Benefits from 'components/Benefits/Benefits';
 import Order from 'components/Order/Order';
 import Footer from 'components/Footer/Footer';
 import 'index.scss';
@@ -35,6 +36,7 @@ const Layout = ({ children }) => (
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <Hero />
+        <Benefits />
         <Order />
         <Footer />
       </Fragment>

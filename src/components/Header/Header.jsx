@@ -22,7 +22,7 @@ function Header() {
       </nav>
       <div className={css.content}>
         <h1 className={css.title}>
-          Fair Trade True
+          Fairly Sourced True
           <br />
           Trinitario Cocoa
         </h1>

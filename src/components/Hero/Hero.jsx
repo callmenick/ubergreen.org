@@ -24,9 +24,9 @@ function Hero() {
             </strong>
             , and{' '}
             <strong>
-              <span>fair trade</span>
+              <span>fairly sourced</span>
             </strong>{' '}
-            over mass production.
+            cocoa.
           </p>
         </div>
       </div>
