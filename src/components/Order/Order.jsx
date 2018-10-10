@@ -10,12 +10,17 @@ const items = [
   {
     id: uniq(),
     title: 'Cacao nibs (50g)',
-    price: '$20'
+    price: '$25'
+  },
+  {
+    id: uniq(),
+    title: 'Cacao nibs (100g)',
+    price: '$50'
   },
   {
     id: uniq(),
     title: 'Cacao nibs (200g)',
-    price: '$65'
+    price: '$90'
   },
   {
     id: uniq(),
