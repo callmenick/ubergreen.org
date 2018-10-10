@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import Header from 'components/Header/Header';
-import Hero from 'components/Hero/Hero';
+import About from 'components/About/About';
 import Benefits from 'components/Benefits/Benefits';
 import Order from 'components/Order/Order';
 import Footer from 'components/Footer/Footer';
@@ -35,7 +35,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <Hero />
+        <About />
         <Benefits />
         <Order />
         <Footer />
