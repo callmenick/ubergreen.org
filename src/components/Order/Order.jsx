@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import uniq from 'lodash/uniq';
+import uniqueId from 'lodash/uniqueId';
 import css from 'components/Order/Order.module.scss';
 
 const SENDGRID_API_KEY =
@@ -8,57 +8,57 @@ const SENDGRID_API_KEY =
 
 const items = [
   {
-    id: uniq(),
+    id: uniqueId('order'),
     title: 'Cacao nibs (50g)',
     price: '$25'
   },
   {
-    id: uniq(),
+    id: uniqueId('order'),
     title: 'Cacao nibs (100g)',
     price: '$50'
   },
   {
-    id: uniq(),
+    id: uniqueId('order'),
     title: 'Cacao nibs (200g)',
     price: '$90'
   },
   {
-    id: uniq(),
+    id: uniqueId('order'),
     title: 'Chocolate banana bread with nibs (pack of 3)',
     price: '$35',
   },
   {
-    id: uniq(),
+    id: uniqueId('order'),
     title: 'Chocolate banana bread without nibs (pack of 3)',
     price: '$35',
   },
   {
-    id: uniq(),
+    id: uniqueId('order'),
     title: 'Chocolate banana bread without eggs (pack of 3)',
     price: '$35',
   },
   {
-    id: uniq(),
+    id: uniqueId('order'),
     title: 'Chocolate cupcakes without eggs and nibs (pack of 3)',
     price: '$35',
   },
   {
-    id: uniq(),
+    id: uniqueId('order'),
     title: 'Chocolate cereal clusters with nibs (100g)',
     price: '$60',
   },
   {
-    id: uniq(),
+    id: uniqueId('order'),
     title: 'Chocolate cereal clusters without nibs (100g)',
     price: '$60',
   },
   {
-    id: uniq(),
+    id: uniqueId('order'),
     title: 'Chocolate with sorrel filling (box of 4)',
     price: '$40',
   },
   {
-    id: uniq(),
+    id: uniqueId('order'),
     title: 'Chocolate with nibs (3 x 30g)',
     price: '$100',
   },
