@@ -43,7 +43,7 @@ const Layout = ({ children }) => (
             },
             {
               property: 'og:image',
-              content: withPrefix('/img/og.png'),
+              content: 'https://ubergreen.org/img/og.png',
             },
             {
               property: 'og:url',
