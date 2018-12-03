@@ -7,7 +7,7 @@ function Footer() {
     <footer id="contact" className={css.container}>
       <span className={css.email}>
         For general inquiries, email{' '}
-        <a href="mailto:tobias@ubergreen.org">tobias@ubergreen.org</a>
+        <a href="mailto:info@ubergreen.org">info@ubergreen.org</a>
       </span>
       <span className={css.copyright}>© Ubergreen</span>
     </footer>

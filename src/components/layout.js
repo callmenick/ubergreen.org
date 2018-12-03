@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql, withPrefix } from 'gatsby';
 import Header from 'components/Header/Header';
 import About from 'components/About/About';
 import Benefits from 'components/Benefits/Benefits';
@@ -27,9 +27,28 @@ const Layout = ({ children }) => (
           meta={[
             {
               name: 'description',
-              content:
-                'Ubergreen’s mission is to support small-scale Caribbean producers who are focused on flavour, quality, and fairly sourced cocoa.',
+              content: data.site.siteMetadata.description,
             },
+            {
+              property: 'og:title',
+              content: data.site.siteMetadata.title,
+            },
+            {
+              property: 'og:site_name',
+              content: 'Ubergreen',
+            },
+            {
+              property: 'og:description',
+              content: data.site.siteMetadata.description,
+            },
+            {
+              property: 'og:image',
+              content: withPrefix('/img/og.png'),
+            },
+            {
+              property: 'og:url',
+              content: 'https://ubergreen.org/',
+            }
           ]}
         >
           <html lang="en" />
