@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Lilita One";
+  src: url("/static/fonts/lilitaone-regular.woff2") format("woff2"),
+    url("/static/fonts/lilitaone-regular.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("/static/fonts/ptsans-bold.woff2") format("woff2"),
+    url("/static/fonts/ptsans-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("/static/fonts/ptsans-italic.woff2") format("woff2"),
+    url("/static/fonts/ptsans-italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("/static/fonts/ptsans-regular.woff2") format("woff2"),
+    url("/static/fonts/ptsans-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --fontPrimary: "PT Sans", sans-serif;
+  --fontSecondary: "Lilita One", sans-serif;
+
+  /* body font-size */
+  --fontSize10: 1rem;
+  --fontSize12: 1.2rem;
+  --fontSize14: 1.4rem;
+  --fontSize16: 1.6rem;
+  --fontSize18: 1.8rem;
+  --fontSize20: 2rem;
+  --fontSize22: 2.2rem;
+  --fontSize24: 2.4rem;
+  --fontSize26: 2.6rem;
+  --fontSize28: 2.8rem;
+  --fontSize30: 3rem;
+
+  /* heading font-size */
+  --fontSize32: 3.2rem;
+  --fontSize42: 4.2rem;
+  --fontSize50: 5rem;
+  --fontSize60: 6rem;
+  --fontSize72: 7.2rem;
+  --fontSize90: 9rem;
+}

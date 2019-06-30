@@ -1,0 +1,14 @@
+a {
+  color: var(--colorPrimary500);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+p {
+}
+
+strong {
+}
+
+em {
+}

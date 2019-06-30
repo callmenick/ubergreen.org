@@ -10,10 +10,9 @@
   "arrowParens": "always",
   "overrides": [
     {
-      "files": "src/**/*.css",
+      "files": "src/**/*.scss",
       "options": {
-        "singleQuote": false,
-        "trailingComma": "none"
+        "singleQuote": false
       }
     }
   ]

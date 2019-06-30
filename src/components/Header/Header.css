@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--gutter15);
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+}
+
+.link {
+  margin-left: var(--gutter15);
+}

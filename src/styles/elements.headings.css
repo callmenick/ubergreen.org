@@ -1,0 +1,8 @@
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+:--heading {
+  color: var(--colorNeutral900);
+  font-family: var(--fontSecondary);
+  font-weight: 700;
+  line-height: var(--lineHeightStandard);
+}

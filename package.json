@@ -1,42 +1,78 @@
 {
   "name": "ubergreen.org",
-  "description": "Ubergreen.org site",
-  "version": "1.0.0",
-  "author": "Nick Salloum <nick@callmenick.com>",
-  "dependencies": {
-    "axios": "^0.19.0",
-    "classnames": "^2.2.6",
-    "gatsby": "^2.9.4",
-    "gatsby-plugin-favicon": "^3.1.4",
-    "gatsby-plugin-manifest": "^2.0.2",
-    "gatsby-plugin-offline": "^2.0.5",
-    "gatsby-plugin-react-helmet": "^3.0.0",
-    "gatsby-plugin-sass": "^2.0.1",
-    "lodash": "^4.17.11",
-    "node-sass": "^4.9.3",
-    "normalize.css": "^8.0.0",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0",
-    "url-loader": "^1.1.1"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
+  "version": "2.0.0",
+  "description": "Ubergreen site",
+  "main": "index.js",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gatsby build && gh-pages -b master -d public"
+    "dev": "cross-env node server.js",
+    "build": "cross-env next build",
+    "start": "cross-env NODE_ENV=production node server.js",
+    "eslint": "eslint src/ stories/ --ext .js,.jsx",
+    "stylelint": "stylelint 'src/**/*.css' --config ./stylelint.config.js",
+    "commit": "git-cz"
   },
-  "devDependencies": {
-    "gh-pages": "^2.0.0",
-    "prettier": "^1.14.2"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run eslint && npm run stylelint && npm run test"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.css": [
+      "stylelint --fix",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  }
+    "url": "git+https://github.com/callmenick/ubergreen.org.git"
+  },
+  "author": "Nick Salloum <nick@callmenick.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/callmenick/ubergreen.org/issues"
+  },
+  "homepage": "https://github.com/callmenick/ubergreen.org#readme",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "classnames": "^2.2.6",
+    "cookie-parser": "^1.4.4",
+    "cross-env": "^5.2.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.11",
+    "next": "^8.1.0",
+    "next-images": "^1.1.2",
+    "normalize.css": "^8.0.1",
+    "nprogress": "^0.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "sitemap": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "babel-eslint": "^10.0.2",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-cypress": "^2.2.1",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "husky": "^2.7.0",
+    "lint-staged": "^8.2.1",
+    "postcss-preset-env": "^6.6.0",
+    "prettier": "^1.18.2",
+    "stylelint": "^10.1.0"
+  },
+  "engines": {
+    "node": "10.15",
+    "npm": "6.5"
+  },
+  "private": true
 }

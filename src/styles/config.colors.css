@@ -1,0 +1,22 @@
+:root {
+  --colorWhite: #fff;
+  --colorBlack: #000;
+
+  --colorNeutral900: #111;
+  --colorNeutral700: #444;
+  --colorNeutral500: #777;
+  --colorNeutral300: #aaa;
+  --colorNeutral100: #ddd;
+
+  --colorPrimary900: #001835;
+  --colorPrimary700: #1C556B;
+  --colorPrimary500: #0792BC;
+  --colorPrimary300: #48BEDD;
+  --colorPrimary100: #BFDEE5;
+
+  --colorSecondary900: #CC2100;
+  --colorSecondary700: #D85615;
+  --colorSecondary500: #E5892D;
+  --colorSecondary300: #F2B948;
+  --colorSecondary100: #FFE566;
+}

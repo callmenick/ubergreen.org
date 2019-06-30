@@ -1,0 +1,13 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #fff;
+  color: var(--colorNeutral700);
+  font-family: var(--fontPrimary);
+  font-size: var(--fontSize18);
+  line-height: var(--lineHeightStandard);
+  -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,17 @@
+:root {
+  --gutter4: 0.4rem;
+  --gutter6: 0.6rem;
+  --gutter8: 0.8rem;
+  --gutter10: 1rem;
+  --gutter12: 1.2rem;
+  --gutter15: 1.5rem;
+  --gutter20: 2rem;
+  --gutter24: 2.4rem;
+  --gutter30: 3rem;
+  --gutter45: 4.5rem;
+  --gutter60: 6rem;
+  --gutter75: 7.5rem;
+  --gutter90: 9rem;
+  --gutter120: 12rem;
+  --gutter150: 15rem;
+}

@@ -1,0 +1,12 @@
+@import "~nprogress/nprogress.css";
+
+:global(#nprogress .bar) {
+  height: 0.3rem;
+  background: var(--colorPrimary500);
+}
+
+:global(#nprogress .peg) {
+  box-shadow:
+    0 0 3rem var(--colorPrimary500),
+    0 0 1.5rem var(--colorPrimary500);
+}

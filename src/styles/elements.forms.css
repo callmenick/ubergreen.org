@@ -1,0 +1,27 @@
+@custom-selector :--inputs input, textarea, button, select;
+
+:--inputs {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: normal;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  appearance: none;
+}
+
+input[type="radio"] {
+  appearance: radio;
+}
+
+input[type="checkbox"] {
+  appearance: checkbox;
+}
+
+button {
+  cursor: pointer;
+}
