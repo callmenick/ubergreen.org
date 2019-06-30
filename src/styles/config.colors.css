@@ -2,21 +2,21 @@
   --colorWhite: #fff;
   --colorBlack: #000;
 
-  --colorNeutral900: #111;
-  --colorNeutral700: #444;
-  --colorNeutral500: #777;
-  --colorNeutral300: #aaa;
-  --colorNeutral100: #ddd;
+  --colorNeutral900: #1a151e;
+  --colorNeutral700: #41364a;
+  --colorNeutral500: #725e82;
+  --colorNeutral300: #a292b0;
+  --colorNeutral100: #d4cddb;
 
-  --colorPrimary900: #001835;
-  --colorPrimary700: #1C556B;
-  --colorPrimary500: #0792BC;
-  --colorPrimary300: #48BEDD;
-  --colorPrimary100: #BFDEE5;
+  --colorPrimary900: #480e77;
+  --colorPrimary700: #6a23a4;
+  --colorPrimary500: #964ecf;
+  --colorPrimary300: #c78df6;
+  --colorPrimary100: #daadff;
 
-  --colorSecondary900: #CC2100;
-  --colorSecondary700: #D85615;
-  --colorSecondary500: #E5892D;
-  --colorSecondary300: #F2B948;
-  --colorSecondary100: #FFE566;
+  --colorSecondary900: #a88900;
+  --colorSecondary700: #f0c505;
+  --colorSecondary500: #f9dc5c;
+  --colorSecondary300: #ffed9e;
+  --colorSecondary100: #fff7d1;
 }
