@@ -25,6 +25,7 @@ const nextConfig = {
       return getLocalIdent(loaderContext, localIdentName, localName, options);
     },
   },
+  target: 'serverless',
   webpack: (config, { dev }) => {
     if (!dev) {
       config.devtool = 'source-map';

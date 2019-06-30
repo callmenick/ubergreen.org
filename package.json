@@ -4,9 +4,9 @@
   "description": "Ubergreen site",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env node server.js",
-    "build": "cross-env next build",
-    "start": "cross-env NODE_ENV=production node server.js",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
     "eslint": "eslint src/ --ext .js,.jsx",
     "stylelint": "stylelint 'src/**/*.css' --config ./stylelint.config.js",
     "commit": "git-cz"
