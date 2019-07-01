@@ -1,4 +1,46 @@
 .footer {
-  padding: var(--gutter15);
-  text-align: center;
+  padding: var(--gutter45);
+  background-color: var(--colorPrimary500);
+}
+
+.content {
+  grid-column: 1 / -1;
+
+  @media (--xs-up) {
+    grid-column: 2 / -2;
+  }
+}
+
+.siteTitle {
+  margin: 0 0 var(--gutter15) 0;
+  padding: 0;
+  font-size: var(--fontSize22);
+}
+
+.siteTitle a {
+  color: var(--colorWhite);
+}
+
+.info {
+  display: block;
+  color: var(--colorWhite);
+  font-size: var(--fontSize18);
+}
+
+.info a {
+  color: var(--colorWhite);
+  text-decoration: underline;
+}
+
+.instagram {
+  display: block;
+  margin-top: var(--gutter45);
+}
+
+.instagram a {
+}
+
+.instagram svg {
+  display: block;
+  margin: 0;
 }
