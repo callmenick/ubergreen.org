@@ -1,0 +1,4 @@
+:root {
+  --gridColumns: 12;
+  --gridGap: var(--gutter20);
+}

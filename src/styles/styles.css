@@ -5,6 +5,7 @@
 @import "config.layers.css";
 @import "config.lineheight.css";
 @import "config.screensizes.css";
+@import "config.grid.css";
 @import "generic.boxsizing.css";
 @import "elements.root.css";
 @import "elements.headings.css";
