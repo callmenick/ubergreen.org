@@ -3,14 +3,10 @@ import PropTypes from 'prop-types';
 import NProgress from 'nprogress';
 import Router from 'next/router';
 import Head from 'next/head';
-import getConfig from 'next/config';
 import Header from 'components/Header';
 import Main from 'components/Main';
 import Footer from 'components/Footer';
 import css from './IndexLayout.css';
-
-const { publicRuntimeConfig } = getConfig();
-const SITE_URL = publicRuntimeConfig.SITE_URL;
 
 NProgress.configure({
   showSpinner: false,
@@ -54,9 +50,13 @@ function IndexLayout({ children }) {
         <meta
           key="twitterImage"
           name="twitter:image"
-          content={`${SITE_URL}/static/img/og/ubergreen.png`}
+          content={`${process.env.SITE_URL}/static/img/og/ubergreen.png`}
         />
-        <meta key="twitterUrl" name="twitter:url" content={SITE_URL} />
+        <meta
+          key="twitterUrl"
+          name="twitter:url"
+          content={process.env.SITE_URL}
+        />
         <meta key="ogType" property="og:type" content="website" />
         <meta
           key="ogSiteName"
@@ -76,9 +76,9 @@ function IndexLayout({ children }) {
         <meta
           key="ogImage"
           property="og:image"
-          content={`${SITE_URL}/static/img/og/ubergreen.png`}
+          content={`${process.env.SITE_URL}/static/img/og/ubergreen.png`}
         />
-        <meta key="ogUrl" property="og:url" content={SITE_URL} />
+        <meta key="ogUrl" property="og:url" content={process.env.SITE_URL} />
         {process.env.NODE_ENV !== 'production' && (
           <link
             rel="stylesheet"

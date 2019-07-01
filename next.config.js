@@ -2,17 +2,16 @@ const path = require('path');
 const withCSS = require('@zeit/next-css');
 const withImages = require('next-images');
 const getLocalIdent = require('css-loader/lib/getLocalIdent');
-const buildtime = require('./env/buildtime');
-const runtime = require('./env/runtime');
 
 const compose = (...fns) => (x) => fns.reduceRight((v, f) => f(v), x);
 
 const nextConfig = {
-  env: buildtime,
-  publicRuntimeConfig: Object.keys(runtime).reduce((acc, key) => {
-    acc[key] = process.env[key] || runtime[key];
-    return acc;
-  }, {}),
+  env: {
+    META_AUTHOR: 'Nick Salloum',
+    META_DESCRIPTION: 'Ubergreen',
+    META_TITLE: 'Ubergreen',
+    SITE_URL: 'https://ubergreen.org',
+  },
   cssModules: true,
   cssLoaderOptions: {
     camelCase: true,
