@@ -1,19 +1,140 @@
+/**
+ * header wrapper
+ */
+
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--gutter15);
+  position: relative;
+  padding: var(--gutter30) 0;
+  border-bottom: solid 0.2rem var(--colorNeutral900);
+
+  @media (--medium-up) {
+    border: none;
+  }
 }
 
-.title {
+/**
+ * logo
+ */
+
+.logoWrapper {
+  grid-column: 1 / 7;
   margin: 0;
   padding: 0;
+
+  @media (--small-up) {
+    grid-column: 2 / 7;
+  }
 }
 
+.logo {
+  display: block;
+  width: 12rem;
+
+  @media (--xs-up) {
+    width: 15rem;
+  }
+
+  @media (--small-up) {
+    width: 18rem;
+  }
+}
+
+/**
+ * navigation
+ */
+
 .nav {
-  display: flex;
+  position: absolute;
+  top: calc(100% + 0.2rem);
+  left: 0;
+  z-index: 2;
+  display: none;
+  padding: var(--gutter4) var(--gutter15);
+  width: 100%;
+  background-color: #fff;
+  border-bottom: solid 0.2rem var(--colorNeutral900);
+}
+
+.nav.active {
+  display: block;
+}
+
+@media (--medium-up) {
+  .nav,
+  .nav.active {
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    grid-column: -2 / 7;
+    padding: 0;
+    width: auto;
+    background: none;
+    border: none;
+  }
 }
 
 .link {
-  margin-left: var(--gutter15);
+  position: relative;
+  display: block;
+  padding: var(--gutter4);
+  width: 100%;
+  color: var(--colorPrimary500);
+  font-weight: 700;
+  text-align: center;
+}
+
+.link:hover {
+  color: var(--colorPrimary900);
+}
+
+@media (--medium-up) {
+  .link.active::after {
+    position: absolute;
+    top: calc(100% + 0.2rem);
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    background-color: var(--colorPrimary500);
+    content: "";
+  }
+}
+
+@media (--medium-up) {
+  .link {
+    margin-left: var(--gutter30);
+    padding: 0;
+    width: auto;
+    text-align: left;
+  }
+
+  .link:first-child {
+    margin-left: 0;
+  }
+}
+
+/**
+ * nav toggle
+ */
+
+.toggleWrapper {
+  grid-column: -1 / 7;
+  justify-self: end;
+
+  @media (--small-up) {
+    grid-column: -2 / 7;
+  }
+
+  @media (--medium-up) {
+    display: none;
+  }
+}
+
+.toggle {
+  width: 2.4rem;
+  height: 2.4rem;
+
+  @media (--small-up) {
+    width: 3rem;
+    height: 3rem;
+  }
 }

@@ -9,3 +9,19 @@
 .grid.padded {
   padding: 0 var(--gridGap);
 }
+
+.grid.alignItems-stretch {
+  align-items: stretch;
+}
+
+.grid.alignItems-center {
+  align-items: center;
+}
+
+.grid.alignItems-start {
+  align-items: start;
+}
+
+.grid.alignItems-end {
+  align-items: end;
+}
