@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Hero from './Hero';
 
 function HomePage() {
-  return <div>This is the home page</div>;
+  return (
+    <Fragment>
+      <Hero />
+    </Fragment>
+  );
 }
 
 export default HomePage;
