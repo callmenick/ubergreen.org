@@ -78,13 +78,17 @@
   display: block;
   padding: var(--gutter4);
   width: 100%;
-  color: var(--colorPrimary500);
+  color: var(--colorPrimary300);
   font-weight: 700;
   text-align: center;
 }
 
 .link:hover {
-  color: var(--colorPrimary900);
+  color: var(--colorPrimary500);
+}
+
+.link.active {
+  color: var(--colorPrimary500);
 }
 
 @media (--medium-up) {
