@@ -61,7 +61,7 @@ function IndexLayout({ children }) {
         <meta
           key="ogSiteName"
           property="og:site_name"
-          content="Cheeze Wizards"
+          content={process.env.META_TITLE}
         />
         <meta
           key="ogTitle"
