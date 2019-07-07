@@ -4,5 +4,5 @@
   color: var(--colorNeutral900);
   font-family: var(--fontSecondary);
   font-weight: 700;
-  line-height: var(--lineHeightStandard);
+  line-height: var(--lineHeightSmall);
 }
