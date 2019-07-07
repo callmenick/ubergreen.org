@@ -21,13 +21,8 @@
 }
 
 .title {
-  margin: 0 0 var(--gutter15) 0;
-  font-size: var(--fontSize22);
-
-  @media (--xs-up) {
-    margin: 0 0 var(--gutter20) 0;
-    font-size: var(--fontSize32);
-  }
+  margin: 0 0 var(--gutter20) 0;
+  font-size: var(--fontSize32);
 
   @media (--small-up) {
     margin: 0 0 var(--gutter30) 0;
@@ -45,11 +40,7 @@
 
 .description {
   margin: 0;
-  font-size: var(--fontSize14);
-
-  @media (--xs-up) {
-    font-size: var(--fontSize16);
-  }
+  font-size: var(--fontSize16);
 
   @media (--small-up) {
     font-size: var(--fontSize18);
@@ -80,6 +71,6 @@
 .img img {
   display: block;
   margin: 0;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
