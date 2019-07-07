@@ -1,0 +1,96 @@
+/**
+ * cta
+ */
+
+.cta {
+  padding: var(--gutter45) 0;
+  text-align: center;
+}
+
+.cta.default {
+  background-color: #fff;
+}
+
+.cta.primary {
+  background-color: var(--colorPrimary500);
+}
+
+.cta.secondary {
+  background-color: var(--colorSecondary500);
+}
+
+/**
+ * content wrapper, sits inside Grid
+ */
+
+.content {
+  grid-column: 1 / -1;
+
+  @media (--medium-up) {
+    grid-column: 2 / -2;
+  }
+
+  @media (--xlarge-up) {
+    grid-column: 3 / -3;
+  }
+}
+
+/**
+ * heading and description common
+ */
+
+.heading,
+.description {
+  margin: 0 0 var(--gutter15) 0;
+}
+
+/**
+ * heading
+ */
+
+.heading {
+  font-size: var(--fontSize32);
+
+  @media (--small-up) {
+    margin: 0 0 var(--gutter20) 0;
+    font-size: var(--fontSize42);
+  }
+
+  @media (--medium-up) {
+    margin: 0 0 var(--gutter30) 0;
+    font-size: var(--fontSize50);
+  }
+}
+
+.cta.primary .heading {
+  color: #fff;
+}
+
+/**
+ * description
+ */
+
+.description {
+  font-size: var(--fontSize16);
+
+  @media (--small-up) {
+    margin: 0 0 var(--gutter20) 0;
+    font-size: var(--fontSize20);
+  }
+
+  @media (--medium-up) {
+    margin: 0 0 var(--gutter30) 0;
+    font-size: var(--fontSize24);
+  }
+}
+
+.cta.primary .description {
+  color: #fff;
+}
+
+/**
+ * action
+ */
+
+.action {
+}
