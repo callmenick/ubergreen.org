@@ -20,7 +20,7 @@
 
 .button.themed {
   display: inline-block;
-  padding: var(--gutter10);
+  padding: var(--gutter10) var(--gutter20);
   min-width: 12.5rem;
   font-family: var(--fontSecondary);
   font-size: var(--fontSize16);
@@ -92,10 +92,16 @@
  */
 
 .button.sizeSm {
+  padding: var(--gutter10) var(--gutter20);
+  font-size: var(--fontSize16);
 }
 
 .button.sizeMd {
+  padding: var(--gutter15) var(--gutter30);
+  font-size: var(--fontSize18);
 }
 
 .button.sizeLg {
+  padding: var(--gutter20) var(--gutter45);
+  font-size: var(--fontSize20);
 }
