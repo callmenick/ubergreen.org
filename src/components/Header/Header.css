@@ -4,7 +4,7 @@
 
 .header {
   position: relative;
-  padding: var(--gutter30) 0;
+  padding: var(--gutter10) 0;
   border-bottom: solid 0.2rem var(--colorNeutral900);
 
   @media (--medium-up) {
