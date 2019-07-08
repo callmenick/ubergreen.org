@@ -1,13 +1,13 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(var(--gridColumns), 1fr);
-  grid-column-gap: var(--gridGap);
+  grid-gap: var(--gridGap);
   width: 100%;
   min-width: 0;
 }
 
 .grid.padded {
-  padding: 0 var(--gridGap);
+  padding: var(--gridGap);
 }
 
 .grid.alignItems-stretch {
