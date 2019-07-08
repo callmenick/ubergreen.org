@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import Cta from 'components/Cta';
 import Hero from './Hero';
+import Gallery from './Gallery';
 
 function HomePage() {
   return (
@@ -15,7 +16,7 @@ function HomePage() {
         }}
         appearance="primary"
       />
-      <div>more stuff</div>
+      <Gallery />
     </Fragment>
   );
 }
