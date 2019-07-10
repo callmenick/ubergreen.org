@@ -61,7 +61,7 @@
 }
 
 .button.appearance-default {
-  --color: var(--colorPrimary500);
+  --color: var(--colorNeutral900);
   --backgroundColor: #fff;
 }
 
