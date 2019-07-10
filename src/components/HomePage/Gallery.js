@@ -7,30 +7,46 @@ function Gallery() {
     <Grid padded>
       <div className={css.imgWrapper}>
         <picture className={css.picture}>
-          <img className={css.img} src="/static/img/home/pod.jpg" alt="" />
+          <img
+            className={css.img}
+            src="/static/img/placeholder/p1.svg"
+            alt=""
+          />
         </picture>
       </div>
       <div className={css.imgWrapper}>
         <picture className={css.picture}>
           <source
             media="(min-width: 768px)"
-            srcSet="static/img/home/tree-768.jpg"
+            srcSet="static/img/placeholder/p2.svg"
           />
-          <img className={css.img} src="/static/img/home/tree.jpg" alt="" />
+          <img
+            className={css.img}
+            src="/static/img/placeholder/p1.svg"
+            alt=""
+          />
         </picture>
       </div>
       <div className={css.imgWrapper}>
         <picture className={css.picture}>
           <source
             media="(min-width: 768px)"
-            srcSet="static/img/home/tree-768.jpg"
+            srcSet="static/img/placeholder/p2.svg"
           />
-          <img className={css.img} src="/static/img/home/tree.jpg" alt="" />
+          <img
+            className={css.img}
+            src="/static/img/placeholder/p1.svg"
+            alt=""
+          />
         </picture>
       </div>
       <div className={css.imgWrapper}>
         <picture className={css.picture}>
-          <img className={css.img} src="/static/img/home/pod.jpg" alt="" />
+          <img
+            className={css.img}
+            src="/static/img/placeholder/p1.svg"
+            alt=""
+          />
         </picture>
       </div>
     </Grid>
