@@ -7,7 +7,7 @@ import css from './Cta.css';
 
 const buttonAppearances = {
   default: 'primary',
-  primary: 'default',
+  primary: 'primaryReverse',
   secondary: 'default',
 };
 
