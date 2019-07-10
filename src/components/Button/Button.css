@@ -38,11 +38,11 @@
  * Button displays
  */
 
-.button.displayBlock {
+.button.display-block {
   display: block;
 }
 
-.button.displayInlineBlock {
+.button.display-inlineBlock {
   display: inline-block;
 }
 
@@ -50,9 +50,9 @@
  * Button appearances
  */
 
-.button.appearanceDefault,
-.button.appearancePrimary,
-.button.appearanceSecondary {
+.button.appearance-default,
+.button.appearance-primary,
+.button.appearance-secondary {
   &:hover:not(.disabled) {
   }
 
@@ -60,12 +60,12 @@
   }
 }
 
-.button.appearanceDefault {
+.button.appearance-default {
   --color: var(--colorPrimary500);
   --backgroundColor: #fff;
 }
 
-.button.appearancePrimary {
+.button.appearance-primary {
   --color: #fff;
   --backgroundColor: var(--colorPrimary500);
 }
@@ -74,14 +74,14 @@
  * Button widths
  */
 
-.button.widthDefault {}
+.button.width-default {}
 
-.button.widthShrink {
+.button.width-shrink {
   min-width: 0;
   width: fit-content;
 }
 
-.button.widthFill {
+.button.width-fill {
   display: block;
   width: 100%;
   min-width: auto;
@@ -91,17 +91,17 @@
  * Button sizes
  */
 
-.button.sizeSm {
+.button.size-sm {
   padding: var(--gutter10) var(--gutter20);
   font-size: var(--fontSize16);
 }
 
-.button.sizeMd {
+.button.size-md {
   padding: var(--gutter15) var(--gutter30);
   font-size: var(--fontSize18);
 }
 
-.button.sizeLg {
+.button.size-lg {
   padding: var(--gutter20) var(--gutter45);
   font-size: var(--fontSize20);
 }

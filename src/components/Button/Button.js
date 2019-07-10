@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import get from 'lodash/get';
+import isEmpty from 'lodash/isEmpty';
 import cx from 'classnames';
 import Link from 'next/link';
 import css from './Button.css';
@@ -47,13 +47,11 @@ function Button({
         className={cx(
           css.button,
           {
-            [css.themed]: !!theme,
-          },
-          css[get(theme, 'appearance', undefined)],
-          css[get(theme, 'display', undefined)],
-          css[get(theme, 'size', undefined)],
-          css[get(theme, 'width', undefined)],
-          {
+            [css.themed]: !isEmpty(theme),
+            [css[`appearance-${theme.appearance}`]]: theme.appearance,
+            [css[`display-${theme.display}`]]: theme.display,
+            [css[`size-${theme.size}`]]: theme.size,
+            [css[`width-${theme.width}`]]: theme.width,
             [css.disabled]: isDisabled,
             [css.isBusy]: isBusy,
           },
@@ -84,14 +82,10 @@ Button.propTypes = {
   onClick: PropTypes.func,
   target: PropTypes.string,
   theme: PropTypes.shape({
-    appearance: PropTypes.oneOf([
-      'appearanceDefault',
-      'appearancePrimary',
-      'appearanceSecondary',
-    ]),
-    display: PropTypes.oneOf(['displayBlock', 'displayInlineBlock']),
-    size: PropTypes.oneOf(['sizeSm', 'sizeMd', 'sizeLg']),
-    width: PropTypes.oneOf(['widthDefault', 'widthShrink', 'widthFill']),
+    appearance: PropTypes.oneOf(['default', 'primary', 'secondary']),
+    display: PropTypes.oneOf(['block', 'inlineBlock']),
+    size: PropTypes.oneOf(['sm', 'md', 'lg']),
+    width: PropTypes.oneOf(['default', 'shrink', 'fill']),
   }),
   to: PropTypes.string,
   type: PropTypes.string,
@@ -108,7 +102,7 @@ Button.defaultProps = {
   onClick: () => {},
   target: undefined,
   to: undefined,
-  theme: undefined,
+  theme: {},
   type: 'button',
 };
 
