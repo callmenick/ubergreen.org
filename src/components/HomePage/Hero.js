@@ -14,7 +14,7 @@ function Hero() {
         </p>
       </div>
       <div className={css.img}>
-        <img src="/static/img/home/hero.jpg" alt="" />
+        <img src="/static/img/placeholder/p1.svg" alt="" />
       </div>
     </Grid>
   );
