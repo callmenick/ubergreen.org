@@ -8,7 +8,7 @@ import css from './Cta.css';
 const buttonAppearances = {
   default: 'primary',
   primary: 'default',
-  secondary: 'secondary',
+  secondary: 'default',
 };
 
 function Cta({ heading, description, action, appearance }) {

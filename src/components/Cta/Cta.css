@@ -71,7 +71,7 @@
  */
 
 .description {
-  font-size: var(--fontSize16);
+  font-size: var(--fontSize18);
 
   @media (--small-up) {
     margin: 0 0 var(--gutter20) 0;
