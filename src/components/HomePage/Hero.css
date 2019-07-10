@@ -40,11 +40,7 @@
 
 .description {
   margin: 0;
-  font-size: var(--fontSize16);
-
-  @media (--small-up) {
-    font-size: var(--fontSize18);
-  }
+  font-size: var(--fontSize18);
 
   @media (--medium-up) {
     font-size: var(--fontSize20);
