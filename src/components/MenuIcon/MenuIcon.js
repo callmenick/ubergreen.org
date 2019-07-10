@@ -7,12 +7,7 @@ function MenuIcon({ active, color, onClick }) {
   return (
     <div className={css.iconWrapper}>
       <Button onClick={onClick}>
-        <svg
-          className={css.icon}
-          width="100%"
-          height="auto"
-          viewBox="0 0 24 24"
-        >
+        <svg className={css.icon} width="100%" viewBox="0 0 24 24">
           <g fill={color} fillRule="evenodd">
             {active ? (
               <Fragment>
