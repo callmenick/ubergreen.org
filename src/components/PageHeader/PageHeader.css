@@ -1,0 +1,57 @@
+/**
+ * pageHeader
+ */
+
+.pageHeader {
+  padding: var(--gutter20) 0;
+
+  @media (--small-up) {
+    padding: var(--gutter30) 0;
+  }
+
+  @media (--medium-up) {
+    padding: var(--gutter45) 0;
+  }
+}
+
+/**
+ * appearances
+ */
+
+.pageHeader.appearance-primary {
+  background-color: var(--colorPrimary500);
+}
+
+.pageHeader.appearance-secondary {
+  background-color: var(--colorSecondary500);
+}
+
+/**
+ * title
+ */
+
+.title {
+  margin: 0;
+  font-size: var(--fontSize32);
+  text-align: center;
+
+  @media (--small-up) {
+    font-size: var(--fontSize42);
+  }
+
+  @media (--medium-up) {
+    font-size: var(--fontSize50);
+  }
+
+  @media (--large-up) {
+    font-size: var(--fontSize60);
+  }
+}
+
+.pageHeader.appearance-primary .title {
+  color: var(--colorWhite);
+}
+
+.pageHeader.appearance-secondary .title {
+  color: var(--colorNeutral900);
+}

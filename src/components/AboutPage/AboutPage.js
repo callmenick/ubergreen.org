@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import PageHeader from 'components/PageHeader';
+import PageContent from 'components/PageContent';
 
 function AboutPage() {
-  return <div>This is the about page</div>;
+  return (
+    <Fragment>
+      <PageHeader appearance="primary" title="About us" />
+      <PageContent>about page</PageContent>
+    </Fragment>
+  );
 }
 
 export default AboutPage;

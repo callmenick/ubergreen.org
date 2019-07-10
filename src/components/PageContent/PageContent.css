@@ -1,0 +1,7 @@
+.wrapper {
+  padding: var(--gutter45) 0;
+}
+
+.content {
+  grid-column: 1 / -1;
+}
