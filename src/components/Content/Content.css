@@ -1,0 +1,42 @@
+.content {
+}
+
+/**
+ * headings
+ */
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  margin: var(--gutter10) 0;
+  color: var(--colorNeutral900);
+}
+
+.content h1 {}
+
+.content h2 {
+  font-size: var(--fontSize32);
+}
+
+.content h3 {}
+
+.content h4 {}
+
+.content h5 {}
+
+.content h6 {}
+
+/**
+ * text styles
+ */
+
+.content p,
+.content ul,
+.content ol {
+  margin: var(--gutter20) 0;
+  color: var(--colorNeutral700);
+  font-size: var(--fontSize18);
+}
