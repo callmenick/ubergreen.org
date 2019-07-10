@@ -82,7 +82,12 @@ Button.propTypes = {
   onClick: PropTypes.func,
   target: PropTypes.string,
   theme: PropTypes.shape({
-    appearance: PropTypes.oneOf(['default', 'primary', 'secondary']),
+    appearance: PropTypes.oneOf([
+      'default',
+      'primary',
+      'primaryReverse',
+      'secondary',
+    ]),
     display: PropTypes.oneOf(['block', 'inlineBlock']),
     size: PropTypes.oneOf(['sm', 'md', 'lg']),
     width: PropTypes.oneOf(['default', 'shrink', 'fill']),

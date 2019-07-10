@@ -62,12 +62,17 @@
 
 .button.appearance-default {
   --color: var(--colorNeutral900);
-  --backgroundColor: #fff;
+  --backgroundColor: var(--colorWhite);
 }
 
 .button.appearance-primary {
-  --color: #fff;
+  --color: var(--colorWhite);
   --backgroundColor: var(--colorPrimary500);
+}
+
+.button.appearance-primaryReverse {
+  --color: var(--colorPrimary500);
+  --backgroundColor: var(--colorWhite);
 }
 
 /**
