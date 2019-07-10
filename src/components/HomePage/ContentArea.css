@@ -1,0 +1,23 @@
+.imgWrapper {
+  grid-column: 1 / -1;
+}
+
+.img {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  grid-column: 1 / -1;
+
+  @media (--small-up) {
+    grid-column: 2 / -2;
+  }
+
+  @media (--medium-up) {
+    grid-column: 3 / -3;
+    padding: var(--gutter20) 0;
+  }
+}
