@@ -6,9 +6,9 @@ import Grid from 'components/Grid';
 import css from './Cta.css';
 
 const buttonAppearances = {
-  default: 'appearancePrimary',
-  primary: 'appearanceDefault',
-  secondary: 'appearanceSecondary',
+  default: 'primary',
+  primary: 'default',
+  secondary: 'secondary',
 };
 
 function Cta({ heading, description, action, appearance }) {
@@ -23,7 +23,7 @@ function Cta({ heading, description, action, appearance }) {
               href={action.href}
               theme={{
                 appearance: buttonAppearances[appearance],
-                size: 'sizeMd',
+                size: 'md',
               }}
             >
               {action.text}
