@@ -1,0 +1,10 @@
+.form {
+  display: block;
+  padding: var(--gutter30);
+  background-color: var(--colorNeutral50);
+  box-shadow: -1rem 1rem var(--colorNeutral100);
+}
+
+.group {
+  margin: var(--gutter20) 0;
+}

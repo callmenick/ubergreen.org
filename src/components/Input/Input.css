@@ -1,0 +1,65 @@
+/**
+ * wrapper element for label and input
+ */
+
+.container {
+}
+
+/**
+ * labels for inputs
+ */
+
+.label {
+  display: inline-block;
+  font-family: var(--fontSecondary);
+  font-size: var(--fontSize18);
+  font-weight: 700;
+  line-height: var(--lineHeightSmall);
+  cursor: pointer;
+}
+
+.label .required {
+  color: var(--colorPrimary500);
+}
+
+/**
+ * actual input
+ */
+
+.input {
+  display: block;
+  padding: var(--gutter15);
+  margin-top: var(--gutter8);
+  width: 100%;
+  color: var(--colorNeutral700);
+  font-family: var(--fontPrimary);
+  font-size: var(--fontSize18);
+  background-color: var(--colorWhite);
+  box-shadow: 0 0 0 0.2rem var(--colorNeutral100);
+  border-radius: 0.5rem;
+  transition: box-shadow 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem var(--colorNeutral300);
+}
+
+.input::placeholder {
+  color: var(--colorNeutral300);
+}
+
+/**
+ * text and email inputs
+ */
+
+.input.text {
+}
+
+/**
+ * textarea inputs
+ */
+
+.input.textarea {
+  resize: vertical;
+}
