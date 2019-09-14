@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import Cta from 'components/Cta';
 import Hero from './Hero';
 import Gallery from './Gallery';
+import Banner from './Banner';
 import ContentArea from './ContentArea';
 
 function HomePage() {
@@ -10,8 +11,8 @@ function HomePage() {
       <Hero />
       <Cta
         appearance="primary"
-        heading="Fairly-sourced, consistent, & traceable beans"
-        description="In the first call to action, we should talk about our emphasis on traceability and consistency of our supply, with a link to read more"
+        heading="You know where it comes from"
+        description="Transparent supply chain messaging"
         action={{
           text: 'Learn more',
           href: '/about',
@@ -20,8 +21,18 @@ function HomePage() {
       <Gallery />
       <Cta
         appearance="secondary"
-        heading="Emphasis on organic certification of regional farms"
-        description="This call to cation should focus more on helping local / regional farms achieve and maintain a high standard w/ organic certification, with a link to find out more."
+        heading="You know who’s making it"
+        description="Local / regional farms, etc etc"
+        action={{
+          text: 'Learn more',
+          href: '/about',
+        }}
+      />
+      <Banner />
+      <Cta
+        appearance="primary"
+        heading="You know it’s high quality"
+        description="Organic certification"
         action={{
           text: 'Learn more',
           href: '/about',

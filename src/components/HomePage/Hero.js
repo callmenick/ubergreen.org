@@ -6,11 +6,10 @@ function Hero() {
   return (
     <Grid alignItems="center">
       <div className={css.cta}>
-        <h1 className={css.title}>Hero content</h1>
+        <h1 className={css.title}>Good taste in good taste</h1>
         <p className={css.description}>
-          Main points need to be driven here. Talking about fairness,
-          consistency, traceability, organic certification, and connecting
-          regional farmers to suppliers around the world.
+          At Ubergreen, we’re dedicated to sourcing and supplying the best True
+          Trinitario cacao.
         </p>
       </div>
       <div className={css.img}>

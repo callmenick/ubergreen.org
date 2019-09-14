@@ -7,9 +7,6 @@ import css from './ContentArea.css';
 function ContentArea() {
   return (
     <Grid padded>
-      <div className={css.imgWrapper}>
-        <img className={css.img} src="/static/img/placeholder/p2.svg" alt="" />
-      </div>
       <div className={css.content}>
         <Content>
           <h2>At Ubergreen, we’re making it our mission to…</h2>
