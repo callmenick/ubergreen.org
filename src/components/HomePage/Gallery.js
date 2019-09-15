@@ -4,12 +4,25 @@ import css from './Gallery.css';
 
 function Gallery() {
   return (
-    <Grid padded>
+    <Grid bordered>
       <div className={css.imgWrapper}>
         <picture className={css.picture}>
+          <img className={css.img} src="/static/img/home/pod-2.jpg" alt="" />
+        </picture>
+      </div>
+      <div className={css.imgWrapper}>
+        <picture className={css.picture}>
+          <source
+            media="(max-width: 767px)"
+            srcSet="/static/img/home/cracked-pod.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcSet="/static/img/home/cracked-pod-768.jpg"
+          />
           <img
             className={css.img}
-            src="/static/img/placeholder/p1.svg"
+            src="/static/img/home/cracked-pod.jpg"
             alt=""
           />
         </picture>
@@ -17,25 +30,16 @@ function Gallery() {
       <div className={css.imgWrapper}>
         <picture className={css.picture}>
           <source
-            media="(min-width: 768px)"
-            srcSet="static/img/placeholder/p2.svg"
+            media="(max-width: 767px)"
+            srcSet="/static/img/home/cracked-bean.jpg"
           />
-          <img
-            className={css.img}
-            src="/static/img/placeholder/p1.svg"
-            alt=""
-          />
-        </picture>
-      </div>
-      <div className={css.imgWrapper}>
-        <picture className={css.picture}>
           <source
             media="(min-width: 768px)"
-            srcSet="static/img/placeholder/p2.svg"
+            srcSet="/static/img/home/cracked-bean-768.jpg"
           />
           <img
             className={css.img}
-            src="/static/img/placeholder/p1.svg"
+            src="/static/img/home/cracked-bean.jpg"
             alt=""
           />
         </picture>
@@ -44,7 +48,7 @@ function Gallery() {
         <picture className={css.picture}>
           <img
             className={css.img}
-            src="/static/img/placeholder/p1.svg"
+            src="/static/img/home/nibs-dish.jpg"
             alt=""
           />
         </picture>

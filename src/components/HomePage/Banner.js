@@ -4,9 +4,13 @@ import css from './Banner.css';
 
 function Banner() {
   return (
-    <Grid padded>
+    <Grid bordered>
       <div className={css.imgWrapper}>
-        <img className={css.img} src="/static/img/placeholder/p2.svg" alt="" />
+        <img
+          className={css.img}
+          src="/static/img/home/chocolate.jpg"
+          alt="Chocolate"
+        />
       </div>
     </Grid>
   );

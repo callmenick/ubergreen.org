@@ -4,16 +4,28 @@ import css from './Hero.css';
 
 function Hero() {
   return (
-    <Grid alignItems="center">
+    <Grid gap={false} bordered>
       <div className={css.cta}>
-        <h1 className={css.title}>Good taste in good taste</h1>
-        <p className={css.description}>
-          At Ubergreen, we’re dedicated to sourcing and supplying the best True
-          Trinitario cacao.
-        </p>
+        <div className={css.ctaInner}>
+          <h1 className={css.title}>Good taste in good taste</h1>
+          <p className={css.description}>
+            At Ubergreen, we’re dedicated to sourcing and supplying the best
+            True Trinitario cacao.
+          </p>
+        </div>
       </div>
       <div className={css.img}>
-        <img src="/static/img/placeholder/p1.svg" alt="" />
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcSet="/static/img/home/nibs.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcSet="/static/img/home/nibs-square.jpg"
+          />
+          <img src="/static/img/home/nibs-square.jpg" alt="Cacao beans" />
+        </picture>
       </div>
     </Grid>
   );
