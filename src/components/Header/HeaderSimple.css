@@ -1,0 +1,46 @@
+/**
+ * header wrapper
+ */
+
+.header {
+  position: relative;
+  padding: var(--gutter10) 0;
+  background-color: #fff;
+}
+
+/**
+ * logo
+ */
+
+.logoWrapper {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 15rem;
+
+  @media (--xs-up) {
+    width: 18rem;
+  }
+
+  @media (--small-up) {
+    width: 21rem;
+  }
+}
+
+/**
+ * description
+ */
+
+.description {
+  color: var(--colorNeutral500);
+  font-size: var(--fontSize18);
+  font-style: italic;
+  text-transform: lowercase;
+  letter-spacing: 0.4px;
+}
