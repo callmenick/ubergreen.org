@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import NProgress from 'nprogress';
 import Router from 'next/router';
 import Head from 'next/head';
-import Header from 'components/Header';
-import Main from 'components/Main';
-import Footer from 'components/Footer';
+import HeaderSimple from 'components/Header/HeaderSimple.js';
+import Main from 'components/Main/Main.js';
+import Footer from 'components/Footer/Footer.js';
 import css from './IndexLayout.css';
 
 NProgress.configure({
@@ -94,7 +94,7 @@ function IndexLayout({ children }) {
           href="/static/img/icons/favicon.png"
         />
       </Head>
-      <Header />
+      <HeaderSimple />
       <Main>{children}</Main>
       <Footer />
     </div>

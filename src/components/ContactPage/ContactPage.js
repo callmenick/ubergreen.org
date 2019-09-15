@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
-import PageHeader from 'components/PageHeader';
-import PageContent from 'components/PageContent';
-import Form from 'components/Form';
-import Input from 'components/Input';
-import Button from 'components/Button';
+import PageHeader from 'components/PageHeader/PageHeader.js';
+import PageContent from 'components/PageContent/PageContent.js';
+import Form from 'components/Form/Form.js';
+import Input from 'components/Input/Input.js';
+import Button from 'components/Button/Button.js';
 
 function ContactPage() {
   return (

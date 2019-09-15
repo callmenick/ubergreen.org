@@ -1,7 +1,7 @@
 import React from 'react';
-import Grid from 'components/Grid';
-import Content from 'components/Content';
-import Button from 'components/Button';
+import Grid from 'components/Grid/Grid.js';
+import Content from 'components/Content/Content.js';
+import Button from 'components/Button/Button.js';
 import css from './ContentArea.css';
 
 function ContentArea() {

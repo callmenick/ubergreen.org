@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
-import Button from 'components/Button';
-import Grid from 'components/Grid';
+import Button from 'components/Button/Button.js';
+import Grid from 'components/Grid/Grid.js';
 import css from './Cta.css';
 
 const buttonAppearances = {

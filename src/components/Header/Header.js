@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'next/router';
 import cx from 'classnames';
-import Grid from 'components/Grid';
-import Button from 'components/Button';
-import Logo from 'components/Logo';
-import MenuIcon from 'components/MenuIcon';
+import Grid from 'components/Grid/Grid.js';
+import Button from 'components/Button/Button.js';
+import Logo from 'components/Logo/Logo.js';
+import MenuIcon from 'components/MenuIcon/MenuIcon.js';
 import css from './Header.css';
 
 function Header({ router }) {

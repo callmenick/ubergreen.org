@@ -1,6 +1,6 @@
 import React from 'react';
-import Grid from 'components/Grid';
-import Button from 'components/Button';
+import Grid from 'components/Grid/Grid.js';
+import Button from 'components/Button/Button.js';
 import css from './Footer.css';
 
 function Footer() {

@@ -1,4 +1,4 @@
-import ContactPage from 'components/ContactPage';
+import ContactPage from 'components/ContactPage/ContactPage.js';
 
 function Contact() {
   return <ContactPage />;

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import Button from 'components/Button';
+import Button from 'components/Button/Button.js';
 import css from './MenuIcon.css';
 
 function MenuIcon({ active, color, onClick }) {

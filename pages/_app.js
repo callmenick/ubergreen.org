@@ -1,7 +1,7 @@
 import React from 'react';
 import App, { Container } from 'next/app';
-import IndexLayout from 'layouts/IndexLayout';
-import { UhOh } from 'components/ErrorPage';
+import IndexLayout from 'layouts/IndexLayout.js';
+import UhOh from 'components/ErrorPage/UhOh.js';
 import 'styles/styles.css';
 
 class UbergreenApp extends App {

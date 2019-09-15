@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
-import Cta from 'components/Cta';
-import Hero from './Hero';
-import Gallery from './Gallery';
-import Banner from './Banner';
-import ContentArea from './ContentArea';
+import Cta from 'components/Cta/Cta.js';
+import Hero from './Hero.js';
+import Gallery from './Gallery.js';
+import Banner from './Banner.js';
+import ContentArea from './ContentArea.js';
 
 function HomePage() {
   return (
