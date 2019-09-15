@@ -7,7 +7,11 @@ function Gallery() {
     <Grid bordered>
       <div className={css.imgWrapper}>
         <picture className={css.picture}>
-          <img className={css.img} src="/static/img/home/pod-2.jpg" alt="" />
+          <img
+            className={css.img}
+            src="/static/img/home/pod-2.jpg"
+            alt="Cacao pod"
+          />
         </picture>
       </div>
       <div className={css.imgWrapper}>
@@ -23,7 +27,7 @@ function Gallery() {
           <img
             className={css.img}
             src="/static/img/home/cracked-pod.jpg"
-            alt=""
+            alt="Cacao pod opened up to show beans"
           />
         </picture>
       </div>
@@ -40,7 +44,7 @@ function Gallery() {
           <img
             className={css.img}
             src="/static/img/home/cracked-bean.jpg"
-            alt=""
+            alt="Roasted and cracked cacao bean"
           />
         </picture>
       </div>
@@ -49,7 +53,7 @@ function Gallery() {
           <img
             className={css.img}
             src="/static/img/home/nibs-dish.jpg"
-            alt=""
+            alt="Cacao nibs in a dish"
           />
         </picture>
       </div>

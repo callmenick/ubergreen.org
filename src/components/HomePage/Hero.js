@@ -24,7 +24,10 @@ function Hero() {
             media="(min-width: 768px)"
             srcSet="/static/img/home/nibs-square.jpg"
           />
-          <img src="/static/img/home/nibs-square.jpg" alt="Cacao beans" />
+          <img
+            src="/static/img/home/nibs-square.jpg"
+            alt="Cacao nibs in a dish"
+          />
         </picture>
       </div>
     </Grid>
