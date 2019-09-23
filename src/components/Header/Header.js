@@ -19,7 +19,7 @@ function Header({ router }) {
             <Logo />
           </Button>
           <span className={css.description}>
-            Fair trade, true Trinitario Cacao
+            Fairly sourced true Trinitario cacao
           </span>
         </div>
         <div className={css.toggleWrapper}>

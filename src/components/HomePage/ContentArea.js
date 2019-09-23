@@ -9,19 +9,17 @@ function ContentArea() {
     <Grid padded>
       <div className={css.content}>
         <Content>
-          <h2>At Ubergreen, we’re making it our mission to…</h2>
+          <h2>
+            At Ubergreen, our mission is to continuously deliver the best cacao
+            from the best farms.
+          </h2>
           <p>
-            Here, we can talk just a little bit more in depth about our core
-            value props outlined above. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
+            We’re making a big effort to bridge the gap between small scale
+            caribbean farms and the global chocolate industry. As a collective
+            unit, we’re focused on flavour, quality, and best practices when it
+            comes to farming and production.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          <p>Ready for a taste?</p>
           <p>
             <Button
               theme={{
@@ -29,6 +27,7 @@ function ContentArea() {
                 display: 'inlineBlock',
                 size: 'md',
               }}
+              href="mailto:info@ubergreen.org"
             >
               Get in touch
             </Button>

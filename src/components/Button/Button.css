@@ -32,6 +32,13 @@
   text-decoration: none;
   white-space: nowrap;
   border-radius: 0.5rem;
+  box-shadow: 0px 5px 15px var(--boxShadow);
+  transition: box-shadow 0.1s, transform 0.1s;
+}
+
+.button.themed:hover {
+  box-shadow: 0px 10px 25px var(--boxShadow);
+  transform: translateY(-2px);
 }
 
 /**
@@ -63,16 +70,19 @@
 .button.appearance-default {
   --color: var(--colorNeutral900);
   --backgroundColor: var(--colorWhite);
+  --boxShadow: rgba(0, 0, 0, 0.4);
 }
 
 .button.appearance-primary {
   --color: var(--colorWhite);
   --backgroundColor: var(--colorPrimary500);
+  --boxShadow: var(--colorPrimary300);
 }
 
 .button.appearance-primaryReverse {
   --color: var(--colorPrimary500);
   --backgroundColor: var(--colorWhite);
+  --boxShadow: var(--colorPrimary900);
 }
 
 /**

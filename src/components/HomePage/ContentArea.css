@@ -7,6 +7,5 @@
 
   @media (--medium-up) {
     grid-column: 3 / -3;
-    padding: var(--gutter20) 0;
   }
 }
