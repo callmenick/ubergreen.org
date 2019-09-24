@@ -8,9 +8,10 @@ const compose = (...fns) => (x) => fns.reduceRight((v, f) => f(v), x);
 const nextConfig = {
   env: {
     META_AUTHOR: 'Nick Salloum',
-    META_DESCRIPTION: 'Ubergreen',
-    META_TITLE: 'Ubergreen',
-    SITE_URL: 'https://ubergreen.org',
+    META_DESCRIPTION:
+      'We’re dedicated to sourcing the finest True Trinitario cacao. We team up with sustainable, small scale local farms to deliver top quality cacao to you.',
+    META_TITLE: 'Ubergreen - Fairly Sourced True Trinitario Cacao',
+    SITE_URL: 'https://www.ubergreen.org',
   },
   cssModules: true,
   cssLoaderOptions: {
