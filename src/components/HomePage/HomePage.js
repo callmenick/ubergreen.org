@@ -22,7 +22,7 @@ function HomePage() {
       <Cta
         appearance="secondary"
         heading="Grown on small scale farms, produced in top class facilities"
-        description="Our companion farms are small scale, and sustainable. and our nibs are produced in high class facilities. We continuously improve our knowledge on all fronts, and make use of modern and progressive farming and production techniques."
+        description="Our companion farms are small scale, and sustainable, and our nibs are produced in high class facilities. We continuously improve our knowledge on all fronts, and make use of modern and progressive farming and production techniques."
         action={{
           text: 'Learn more',
           href: 'mailto:info@ubergreen.org',
