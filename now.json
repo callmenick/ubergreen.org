@@ -1,7 +1,6 @@
 {
   "name": "ubergreen.org",
   "version": 2,
-  "alias": "www.ubergreen.org",
   "builds": [
     {
       "src": "next.config.js",
