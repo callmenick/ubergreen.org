@@ -1,19 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import NProgress from 'nprogress';
-import Router from 'next/router';
 import Head from 'next/head';
 import Header from 'components/Header/Header.js';
 import Main from 'components/Main/Main.js';
 import Footer from 'components/Footer/Footer.js';
 import css from './IndexLayout.css';
-
-NProgress.configure({
-  showSpinner: false,
-});
-Router.events.on('routeChangeStart', () => NProgress.start());
-Router.events.on('routeChangeComplete', () => NProgress.done());
-Router.events.on('routeChangeError', () => NProgress.done());
 
 function IndexLayout({ children }) {
   return (
