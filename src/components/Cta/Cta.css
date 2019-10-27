@@ -5,14 +5,8 @@
 .cta {
   padding: var(--gutter30) 0;
   text-align: center;
-
-  background: url("/static/img/ctas/pods.svg") -20px -20px no-repeat;
-
-  @media (--medium-up) {
-    background:
-      url("/static/img/ctas/pods.svg") -20px -20px no-repeat,
-      url("/static/img/ctas/pods-flipped.svg") calc(100% + 20px) calc(100% + 80px) no-repeat;
-  }
+  background: url("/static/img/general/bubbles.svg");
+  background-size: 450px;
 }
 
 .cta.default {
@@ -70,7 +64,8 @@
   }
 }
 
-.cta.primary .heading {
+.cta.primary .heading,
+.cta.secondary .heading {
   color: #fff;
 }
 
@@ -92,7 +87,8 @@
   }
 }
 
-.cta.primary .description {
+.cta.primary .description,
+.cta.secondary .description {
   color: #fff;
 }
 

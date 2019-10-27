@@ -5,6 +5,8 @@ html {
 body {
   overflow-x: hidden;
   background-color: #fff;
+  background-image: url("/static/img/general/pods-repeating.svg");
+  background-size: 450px;
   color: var(--colorNeutral700);
   font-family: var(--fontPrimary);
   font-size: var(--fontSize18);

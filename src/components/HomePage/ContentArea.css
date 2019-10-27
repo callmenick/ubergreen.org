@@ -8,4 +8,8 @@
   @media (--medium-up) {
     grid-column: 3 / -3;
   }
+
+  @media (--large-up) {
+    grid-column: 4 / -4;
+  }
 }

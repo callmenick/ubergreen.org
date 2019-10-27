@@ -1,0 +1,34 @@
+.content {}
+
+.info {
+  grid-column: 1 / 7;
+
+  @media (--small-up) {
+    grid-column: 2 / 7;
+  }
+}
+
+.info {
+  & h3 {
+    font-size: var(--fontSize32);
+  }
+
+  & p,
+  & ul {
+    margin: var(--gutter20) 0;
+  }
+
+  & ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  & li {
+    margin: 0;
+    padding: 0;
+  }
+
+  & a {
+    text-decoration: underline;
+  }
+}

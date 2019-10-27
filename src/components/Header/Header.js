@@ -18,9 +18,6 @@ function Header({ router }) {
           <Button href="/" className={css.logo}>
             <Logo />
           </Button>
-          <span className={css.description}>
-            Fairly sourced true Trinitario cacao
-          </span>
         </div>
         <div className={css.toggleWrapper}>
           <div className={css.toggle}>

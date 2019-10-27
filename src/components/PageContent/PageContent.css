@@ -7,19 +7,3 @@
     padding: var(--gutter30) 0;
   }
 }
-
-.content {
-  grid-column: 1 / -1;
-
-  @media (--small-up) {
-    grid-column: 2 / -2;
-  }
-
-  @media (--medium-up) {
-    grid-column: 3 / -3;
-  }
-
-  @media (--large-up) {
-    grid-column: 4 / -4;
-  }
-}

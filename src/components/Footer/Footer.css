@@ -1,6 +1,6 @@
 .footer {
   padding: var(--gutter45);
-  background-color: var(--colorPrimary500);
+  background-color: var(--colorSecondary500);
 }
 
 .content {

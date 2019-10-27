@@ -5,7 +5,7 @@ import css from './Banner.css';
 
 function Banner({ img, alt }) {
   return (
-    <Grid bordered>
+    <Grid padded>
       <div className={css.imgWrapper}>
         <img className={css.img} src={img} alt={alt} />
       </div>

@@ -1,0 +1,50 @@
+.image {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+/* stretch images */
+
+.image.pos-1--1 {
+  grid-column: 1 / -1;
+}
+
+.image.pos-2--2 {
+  grid-column: 1 / -1;
+
+  @media (--small-up) {
+    grid-column: 2 / -2;
+  }
+}
+
+/* square images */
+
+.image.pos-1-7 {
+  grid-column: 1 / 6;
+}
+
+.image.pos-7--1 {
+  grid-column: 7 / -1;
+}
+
+.image.pos-2-7 {
+  grid-column: 1 / 7;
+
+  @media (--small-up) {
+    grid-column: 2 / 7;
+  }
+}
+
+.image.pos-7--2 {
+  grid-column: 7 / -1;
+
+  @media (--small-up) {
+    grid-column: 7 / -2;
+  }
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
