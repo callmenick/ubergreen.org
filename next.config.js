@@ -10,7 +10,7 @@ const nextConfig = {
     META_AUTHOR: 'Nick Salloum',
     META_DESCRIPTION:
       'We’re dedicated to sourcing the finest True Trinitario cacao. We team up with sustainable, small scale local farms to deliver top quality cacao to you.',
-    META_TITLE: 'Ubergreen - Fairly Sourced True Trinitario Cacao',
+    META_TITLE: 'Ubergreen Organics – Fairly Sourced True Trinitario Cacao',
     SITE_URL: 'https://www.ubergreen.org',
   },
   cssModules: true,
