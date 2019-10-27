@@ -1,0 +1,17 @@
+.p {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: var(--fontSize20);
+
+  @media (--small-up) {
+    grid-column: 2 / -2;
+  }
+
+  @media (--medium-up) {
+    grid-column: 3 / -3;
+  }
+
+  @media (--large-up) {
+    grid-column: 4 / -4;
+  }
+}
