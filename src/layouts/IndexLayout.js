@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import NProgress from 'nprogress';
 import Router from 'next/router';
 import Head from 'next/head';
-import HeaderSimple from 'components/Header/HeaderSimple.js';
+import Header from 'components/Header/Header.js';
 import Main from 'components/Main/Main.js';
 import Footer from 'components/Footer/Footer.js';
 import css from './IndexLayout.css';
@@ -94,7 +94,7 @@ function IndexLayout({ children }) {
           href="/static/img/icons/favicon.png"
         />
       </Head>
-      <HeaderSimple />
+      <Header />
       <Main>{children}</Main>
       <Footer />
     </div>
