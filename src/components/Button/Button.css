@@ -85,6 +85,12 @@
   --boxShadow: var(--colorPrimary900);
 }
 
+.button.appearance-secondary {
+  --color: var(--colorWhite);
+  --backgroundColor: var(--colorSecondary500);
+  --boxShadow: var(--colorSecondary300);
+}
+
 /**
  * Button widths
  */
