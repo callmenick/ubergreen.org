@@ -4,7 +4,7 @@ import css from './Gallery.css';
 
 function Gallery() {
   return (
-    <Grid bordered>
+    <Grid padded>
       <div className={css.imgWrapper}>
         <picture className={css.picture}>
           <img

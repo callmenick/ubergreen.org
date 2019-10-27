@@ -5,7 +5,7 @@ import css from './Hero.css';
 
 function Hero() {
   return (
-    <Grid gap={false} bordered>
+    <Grid padded>
       <div className={css.cta}>
         <div className={css.ctaInner}>
           <h1 className={css.title}>We source the finest Trinitario cacao</h1>
@@ -17,10 +17,10 @@ function Hero() {
           <div className={css.button}>
             <Button
               theme={{
-                appearance: 'primary',
+                appearance: 'secondary',
                 size: 'md',
               }}
-              href="mailto:info@ubergreen.org"
+              href="/contact"
             >
               Get a taste
             </Button>

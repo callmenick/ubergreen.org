@@ -9,7 +9,6 @@
   align-items: center;
   order: 2;
   padding: var(--gutter45) var(--gutter20);
-  background-color: #fff;
   text-align: center;
 
   @media (--xs-up) {
@@ -18,7 +17,7 @@
 
   @media (--medium-up) {
     grid-column: 7 / -1;
-    padding: 0 var(--gutter20);
+    padding: 0 var(--gutter30);
     text-align: left;
   }
 }

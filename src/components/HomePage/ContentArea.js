@@ -23,11 +23,11 @@ function ContentArea() {
           <p>
             <Button
               theme={{
-                appearance: 'primary',
+                appearance: 'secondary',
                 display: 'inlineBlock',
                 size: 'md',
               }}
-              href="mailto:info@ubergreen.org"
+              href="/contact"
             >
               Get in touch
             </Button>
