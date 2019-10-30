@@ -28,7 +28,7 @@ function HomePage() {
           href: '/about',
         }}
       />
-      <Banner img="/img/home/chocolate.jpg" alt="Chocolate" />
+      <Banner img="/static/img/home/beans-drying.jpg" alt="Chocolate" />
       <Cta
         appearance="secondary"
         heading="High quality, certified organic, no compromises"

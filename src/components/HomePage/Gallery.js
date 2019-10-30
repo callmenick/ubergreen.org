@@ -7,23 +7,27 @@ function Gallery() {
     <Grid padded>
       <div className={css.imgWrapper}>
         <picture className={css.picture}>
-          <img className={css.img} src="/img/home/pod-2.jpg" alt="Cacao pod" />
+          <img
+            className={css.img}
+            src="/static/img/home/pod-budding-square.jpg"
+            alt="Cacao pod budding"
+          />
         </picture>
       </div>
       <div className={css.imgWrapper}>
         <picture className={css.picture}>
           <source
             media="(max-width: 767px)"
-            srcSet="/img/home/cracked-pod.jpg"
+            srcSet="/static/img/home/pods-hanging-square.jpg"
           />
           <source
             media="(min-width: 768px)"
-            srcSet="/img/home/cracked-pod-768.jpg"
+            srcSet="/static/img/home/pods-hanging-rect.jpg"
           />
           <img
             className={css.img}
-            src="/img/home/cracked-pod.jpg"
-            alt="Cacao pod opened up to show beans"
+            src="/static/img/home/pods-hanging-rect.jpg"
+            alt="Cacao pods hanging from a tree"
           />
         </picture>
       </div>
