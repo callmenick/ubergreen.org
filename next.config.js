@@ -1,6 +1,7 @@
 const path = require('path');
 const withCSS = require('@zeit/next-css');
 const withImages = require('next-images');
+const withOffline = require('next-offline');
 const getLocalIdent = require('css-loader/lib/getLocalIdent');
 
 const compose = (...fns) => (x) => fns.reduceRight((v, f) => f(v), x);
@@ -26,6 +27,27 @@ const nextConfig = {
     },
   },
   target: 'serverless',
+  transformManifest: (manifest) => ['/'].concat(manifest),
+  workboxOpts: {
+    swDest: 'service-worker.js',
+    runtimeCaching: [
+      {
+        urlPattern: /^https?.*/,
+        handler: 'NetworkFirst',
+        options: {
+          cacheName: 'https-calls',
+          networkTimeoutSeconds: 15,
+          expiration: {
+            maxEntries: 150,
+            maxAgeSeconds: 30 * 24 * 60 * 60, // 1 month
+          },
+          cacheableResponse: {
+            statuses: [0, 200],
+          },
+        },
+      },
+    ],
+  },
   webpack: (config, { dev }) => {
     if (!dev) {
       config.devtool = 'source-map';
@@ -54,6 +76,7 @@ const nextConfig = {
 };
 
 module.exports = compose(
+  withOffline,
   withImages,
   withCSS,
 )(nextConfig);
