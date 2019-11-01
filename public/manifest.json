@@ -1,0 +1,21 @@
+{
+  "short_name": "Ubergreen Organics",
+  "name": "Ubergreen Organics",
+  "icons": [
+    {
+      "src": "/img/icons/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/icons/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#FFFFFF",
+  "description": "We’re dedicated to sourcing the finest organic True Trinitario cacao.",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#1A151E"
+}
