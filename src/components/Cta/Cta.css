@@ -5,7 +5,7 @@
 .cta {
   padding: var(--gutter30) 0;
   text-align: center;
-  background: url("/static/img/general/bubbles.svg");
+  background: url("/img/general/bubbles.svg");
   background-size: 450px;
 }
 

@@ -20,13 +20,8 @@ function AboutPage() {
           only True Trinitario cacao beans from the land of its birth, Trinidad
           & Tobago.
         </Paragraph>
-        <Image
-          src="/static/img/about/flowers.jpg"
-          alt="bean"
-          start={2}
-          end={7}
-        />
-        <Image src="/static/img/about/pods.jpg" alt="bean" start={7} end={-2} />
+        <Image src="/img/about/flowers.jpg" alt="bean" start={2} end={7} />
+        <Image src="/img/about/pods.jpg" alt="bean" start={7} end={-2} />
         <Paragraph>
           Our mission is to consistently source and supply the highest quality
           certified organic cacao beans in the Trinidad & Tobago to the finest
@@ -78,7 +73,7 @@ function AboutPage() {
           have been able to preserve.
         </Paragraph>
         <Image
-          src="/static/img/about/beans-drying.jpg"
+          src="/img/about/beans-drying.jpg"
           alt="bean"
           start={2}
           end={-2}
@@ -94,14 +89,9 @@ function AboutPage() {
           International Cacao Awards 3 times, and are very well known for their
           unique flavours.
         </Paragraph>
+        <Image src="/img/about/forest.jpg" alt="bean" start={2} end={7} />
         <Image
-          src="/static/img/about/forest.jpg"
-          alt="bean"
-          start={2}
-          end={7}
-        />
-        <Image
-          src="/static/img/about/small-flower.jpg"
+          src="/img/about/small-flower.jpg"
           alt="bean"
           start={7}
           end={-2}

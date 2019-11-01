@@ -4,7 +4,7 @@
 
 .pageHeader {
   padding: var(--gutter20) 0;
-  background: url("/static/img/general/bubbles.svg");
+  background: url("/img/general/bubbles.svg");
   background-size: 450px;
 
   @media (--small-up) {

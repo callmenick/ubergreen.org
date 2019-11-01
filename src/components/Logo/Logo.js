@@ -3,11 +3,7 @@ import css from './Logo.css';
 
 function Logo() {
   return (
-    <img
-      className={css.logo}
-      src="/static/img/logo/logo-og.svg"
-      alt="Ubergreen"
-    />
+    <img className={css.logo} src="/img/logo/logo-og.svg" alt="Ubergreen" />
   );
 }
 
