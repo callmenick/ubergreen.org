@@ -1,13 +1,14 @@
 const SW_ROOT = '/sw.js';
-const SW_VERSION = '1.0.0';
+const SW_VERSION = '1.0.1';
 const SW_PATH = `${SW_ROOT}?version=${SW_VERSION}`;
 
-(() => {
-  if (
-    typeof window === 'undefined' ||
-    typeof navigator === 'undefined' ||
-    !('serviceWorker' in navigator)
-  ) {
+const cannot =
+  typeof window === 'undefined' ||
+  typeof navigator === 'undefined' ||
+  !('serviceWorker' in navigator);
+
+export function register() {
+  if (cannot) {
     console.info('SW not available');
     return false;
   }
@@ -30,4 +31,15 @@ const SW_PATH = `${SW_ROOT}?version=${SW_VERSION}`;
       console.log('ServiceWorker registration failed: ', err);
     },
   );
-})();
+}
+
+export function unregister() {
+  if (cannot) {
+    console.info('SW not available');
+    return false;
+  }
+
+  navigator.serviceWorker.ready.then((registration) => {
+    registration.unregister();
+  });
+}
