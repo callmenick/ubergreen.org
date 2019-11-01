@@ -47,7 +47,7 @@ function ContactPage() {
             </Button>
           </p>
         </div>
-        <Image src="/static/img/about/pods.jpg" alt="bean" start={7} end={-2} />
+        <Image src="/img/about/pods.jpg" alt="bean" start={7} end={-2} />
       </PageContent>
     </Fragment>
   );

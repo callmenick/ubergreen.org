@@ -5,6 +5,7 @@
 .header {
   position: relative;
   padding: var(--gutter10) 0;
+  background-color: #fff;
 }
 
 /**
@@ -51,14 +52,10 @@
  */
 
 .nav {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 2;
   display: none;
+  grid-column: 1 / -1;
   padding: var(--gutter4) var(--gutter15);
   width: 100%;
-  background-color: #fff;
 }
 
 .nav.active {

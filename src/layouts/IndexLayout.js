@@ -41,7 +41,7 @@ function IndexLayout({ children }) {
         <meta
           key="twitterImage"
           name="twitter:image"
-          content={`${process.env.SITE_URL}/static/img/og/ubergreen.png`}
+          content={`${process.env.SITE_URL}/img/og/ubergreen.png`}
         />
         <meta
           key="twitterUrl"
@@ -67,22 +67,22 @@ function IndexLayout({ children }) {
         <meta
           key="ogImage"
           property="og:image"
-          content={`${process.env.SITE_URL}/static/img/og/ubergreen.png`}
+          content={`${process.env.SITE_URL}/img/og/ubergreen.png`}
         />
         <meta key="ogUrl" property="og:url" content={process.env.SITE_URL} />
         {process.env.NODE_ENV !== 'production' && (
           <link
             rel="stylesheet"
             type="text/css"
-            href={`/_next/static/css/styles.chunk.css?v=${Date.now()}`}
+            href={`/_next/css/styles.chunk.css?v=${Date.now()}`}
           />
         )}
-        <link rel="shortcut icon" href="/static/img/icons/favicon.png" />
+        <link rel="shortcut icon" href="/img/icons/favicon.png" />
         <link
           rel="icon"
           type="image/png"
           sizes="192x192"
-          href="/static/img/icons/favicon.png"
+          href="/img/icons/favicon.png"
         />
       </Head>
       <Header />

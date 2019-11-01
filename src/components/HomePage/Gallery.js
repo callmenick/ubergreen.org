@@ -7,26 +7,22 @@ function Gallery() {
     <Grid padded>
       <div className={css.imgWrapper}>
         <picture className={css.picture}>
-          <img
-            className={css.img}
-            src="/static/img/home/pod-2.jpg"
-            alt="Cacao pod"
-          />
+          <img className={css.img} src="/img/home/pod-2.jpg" alt="Cacao pod" />
         </picture>
       </div>
       <div className={css.imgWrapper}>
         <picture className={css.picture}>
           <source
             media="(max-width: 767px)"
-            srcSet="/static/img/home/cracked-pod.jpg"
+            srcSet="/img/home/cracked-pod.jpg"
           />
           <source
             media="(min-width: 768px)"
-            srcSet="/static/img/home/cracked-pod-768.jpg"
+            srcSet="/img/home/cracked-pod-768.jpg"
           />
           <img
             className={css.img}
-            src="/static/img/home/cracked-pod.jpg"
+            src="/img/home/cracked-pod.jpg"
             alt="Cacao pod opened up to show beans"
           />
         </picture>
@@ -35,15 +31,15 @@ function Gallery() {
         <picture className={css.picture}>
           <source
             media="(max-width: 767px)"
-            srcSet="/static/img/home/cracked-bean.jpg"
+            srcSet="/img/home/cracked-bean.jpg"
           />
           <source
             media="(min-width: 768px)"
-            srcSet="/static/img/home/cracked-bean-768.jpg"
+            srcSet="/img/home/cracked-bean-768.jpg"
           />
           <img
             className={css.img}
-            src="/static/img/home/cracked-bean.jpg"
+            src="/img/home/cracked-bean.jpg"
             alt="Roasted and cracked cacao bean"
           />
         </picture>
@@ -52,7 +48,7 @@ function Gallery() {
         <picture className={css.picture}>
           <img
             className={css.img}
-            src="/static/img/home/nibs-dish.jpg"
+            src="/img/home/nibs-dish.jpg"
             alt="Cacao nibs in a dish"
           />
         </picture>
