@@ -1,7 +1,9 @@
 import React from 'react';
 import App from 'next/app';
-import IndexLayout from 'layouts/IndexLayout.js';
+import IndexLayout from 'layouts/IndexLayout';
+import { unregister } from 'sw/sw';
 import 'styles/styles.css';
+unregister();
 
 class UbergreenApp extends App {
   render() {
