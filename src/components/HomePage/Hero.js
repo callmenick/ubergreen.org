@@ -8,7 +8,9 @@ function Hero() {
     <Grid padded>
       <div className={css.cta}>
         <div className={css.ctaInner}>
-          <h1 className={css.title}>We source the finest Trinitario cacao</h1>
+          <h1 className={css.title}>
+            We source the finest organic True Trinitario cacao
+          </h1>
           <p className={css.description}>
             At Ubergreen, we’re dedicated to sourcing the finest True Trinitario
             cacao. We team up with sustainable, small scale local farms to
