@@ -9,51 +9,34 @@ function Gallery() {
         <picture className={css.picture}>
           <img
             className={css.img}
-            src="/static/img/home/pod-budding-square.jpg"
+            src="/img/home/cacao-tree-flowers.jpg"
+            alt="Cacao tree with flowers"
+          />
+        </picture>
+      </div>
+      <div className={css.imgWrapper}>
+        <picture className={css.picture}>
+          <source
+            media="(max-width: 767px)"
+            srcSet="/img/home/pod-budding-square.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcSet="/img/home/pod-budding-rect.jpg"
+          />
+          <img
+            className={css.img}
+            src="/img/home/pod-budding-rect.jpg"
             alt="Cacao pod budding"
           />
         </picture>
       </div>
       <div className={css.imgWrapper}>
         <picture className={css.picture}>
-          <source
-            media="(max-width: 767px)"
-            srcSet="/static/img/home/pods-hanging-square.jpg"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcSet="/static/img/home/pods-hanging-rect.jpg"
-          />
           <img
             className={css.img}
-            src="/static/img/home/pods-hanging-rect.jpg"
+            src="/img/home/pods-hanging-banner.jpg"
             alt="Cacao pods hanging from a tree"
-          />
-        </picture>
-      </div>
-      <div className={css.imgWrapper}>
-        <picture className={css.picture}>
-          <source
-            media="(max-width: 767px)"
-            srcSet="/img/home/cracked-bean.jpg"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcSet="/img/home/cracked-bean-768.jpg"
-          />
-          <img
-            className={css.img}
-            src="/img/home/cracked-bean.jpg"
-            alt="Roasted and cracked cacao bean"
-          />
-        </picture>
-      </div>
-      <div className={css.imgWrapper}>
-        <picture className={css.picture}>
-          <img
-            className={css.img}
-            src="/img/home/nibs-dish.jpg"
-            alt="Cacao nibs in a dish"
           />
         </picture>
       </div>

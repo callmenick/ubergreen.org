@@ -31,14 +31,14 @@ function Hero() {
         <picture>
           <source
             media="(max-width: 767px)"
-            srcSet="/static/img/home/beans-in-hand-rect.jpg"
+            srcSet="/img/home/beans-in-hand-rect.jpg"
           />
           <source
             media="(min-width: 768px)"
-            srcSet="/static/img/home/beans-in-hand-square.jpg"
+            srcSet="/img/home/beans-in-hand-square.jpg"
           />
           <img
-            src="/static/img/home/beans-in-hand-square.jpg"
+            src="/img/home/beans-in-hand-square.jpg"
             alt="Cacao beans in hands"
           />
         </picture>

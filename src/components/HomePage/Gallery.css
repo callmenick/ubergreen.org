@@ -22,20 +22,8 @@
 }
 
 .imgWrapper:nth-child(3) {
-  grid-column: 1 / 7;
-
-  @media (--medium-up) {
-    grid-column: 1 / 9;
-  }
-}
-
-.imgWrapper:nth-child(4) {
-  grid-column: 7 / -1;
-  padding-bottom: 100%;
-
-  @media (--medium-up) {
-    grid-column: 9 / -1;
-  }
+  padding-bottom: 32.78688525%;
+  grid-column: 1 / -1;
 }
 
 .picture {
