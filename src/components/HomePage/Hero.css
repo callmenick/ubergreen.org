@@ -30,6 +30,10 @@
     margin: 0 0 var(--gutter30) 0;
   }
 
+  @media (--medium-up) {
+    font-size: var(--fontSize32);
+  }
+
   @media (--large-up) {
     font-size: var(--fontSize42);
   }

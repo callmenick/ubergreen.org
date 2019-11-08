@@ -7,23 +7,10 @@ function Gallery() {
     <Grid padded>
       <div className={css.imgWrapper}>
         <picture className={css.picture}>
-          <img className={css.img} src="/img/home/pod-2.jpg" alt="Cacao pod" />
-        </picture>
-      </div>
-      <div className={css.imgWrapper}>
-        <picture className={css.picture}>
-          <source
-            media="(max-width: 767px)"
-            srcSet="/img/home/cracked-pod.jpg"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcSet="/img/home/cracked-pod-768.jpg"
-          />
           <img
             className={css.img}
-            src="/img/home/cracked-pod.jpg"
-            alt="Cacao pod opened up to show beans"
+            src="/img/home/cacao-tree-flowers.jpg"
+            alt="Cacao tree with flowers"
           />
         </picture>
       </div>
@@ -31,16 +18,16 @@ function Gallery() {
         <picture className={css.picture}>
           <source
             media="(max-width: 767px)"
-            srcSet="/img/home/cracked-bean.jpg"
+            srcSet="/img/home/pod-budding-square.jpg"
           />
           <source
             media="(min-width: 768px)"
-            srcSet="/img/home/cracked-bean-768.jpg"
+            srcSet="/img/home/pod-budding-rect.jpg"
           />
           <img
             className={css.img}
-            src="/img/home/cracked-bean.jpg"
-            alt="Roasted and cracked cacao bean"
+            src="/img/home/pod-budding-rect.jpg"
+            alt="Cacao pod budding"
           />
         </picture>
       </div>
@@ -48,8 +35,8 @@ function Gallery() {
         <picture className={css.picture}>
           <img
             className={css.img}
-            src="/img/home/nibs-dish.jpg"
-            alt="Cacao nibs in a dish"
+            src="/img/home/pods-hanging-banner.jpg"
+            alt="Cacao pods hanging from a tree"
           />
         </picture>
       </div>

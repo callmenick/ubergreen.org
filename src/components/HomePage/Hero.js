@@ -29,12 +29,18 @@ function Hero() {
       </div>
       <div className={css.img}>
         <picture>
-          <source media="(max-width: 767px)" srcSet="/img/home/nibs.jpg" />
+          <source
+            media="(max-width: 767px)"
+            srcSet="/img/home/beans-in-hand-rect.jpg"
+          />
           <source
             media="(min-width: 768px)"
-            srcSet="/img/home/nibs-square.jpg"
+            srcSet="/img/home/beans-in-hand-square.jpg"
           />
-          <img src="/img/home/nibs-square.jpg" alt="Cacao nibs in a dish" />
+          <img
+            src="/img/home/beans-in-hand-square.jpg"
+            alt="Cacao beans in hands"
+          />
         </picture>
       </div>
     </Grid>
