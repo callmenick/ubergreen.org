@@ -26,10 +26,11 @@ function AboutPage() {
           Our mission is to consistently source and supply the highest quality
           certified organic cacao beans in the Trinidad & Tobago to the finest
           chocolate makers in the world. But we go beyond just the promise of
-          taste and quality. Through blockchain technology, we’ve eliminated
-          potential blind spots along our supply chain, adding details about the
-          origin and every aspect of our carefully selected cacao beans’ journey
-          from farm to chocolate.
+          taste and quality. We plan on leveraging blockchain technology with
+          our, upcoming crop to eliminate potential blind spots along our supply
+          chain. With it, we'll be adding details about the origin and every
+          aspect of our carefully selected cacao beans’ journey from farm to
+          chocolate.
         </Paragraph>
         <Heading>
           Ubergreen and True Trinitario Cacao Beans… What’s all the hype about?
@@ -105,14 +106,13 @@ function AboutPage() {
           other fruit trees and crops planted on the estate. While large parts
           of the fine or flavour cacao industry used agrochemicals in order to
           increase yields, Richard has been “organically organic” for more than
-          20 years at the helm of the estate. He himself, a former “oil man”, is
-          a cancer survivor and he knows what chemicals can do to the body. He
-          took a stance against chemicals long before it was en vogue. At the
-          San Antonio Estate, innovation is a built-in feature as Richard and
-          his Team constantly focus on improvements through education on newest
-          farming practices, post-harvest improvement and general quality
-          standards. You simply can not beat the results of somebody doing what
-          he or she loves.
+          20 years at the helm of the estate. He is a cancer survivor and he
+          knows what chemicals can do to the body. He took a stance against
+          chemicals long before it was en vogue. At the San Antonio Estate,
+          innovation is a built-in feature as Richard and his Team constantly
+          focus on improvements through education on newest farming practices,
+          post-harvest improvement and general quality standards. You simply can
+          not beat the results of somebody doing what he or she loves.
         </Paragraph>
         <Heading>
           Highest quality through standardized post-harvest practices
@@ -136,12 +136,12 @@ function AboutPage() {
           In order to keep our quality and transparency promise we regularly
           conduct laboratory tests to inspect the microbiological and nutrient
           composition of our beans. These independently verified results are
-          available to our clients on request. Furthermore, we use the IBM Food
-          Trust powered Blockchain technology to provide full transparency along
-          the value chain for each batch produced on our partner farms. As such,
-          we eliminate any blind spots in the quality and journey of our beans.
-          Whatever the production and transparency requirements, we will meet
-          your standard.
+          available to our clients on request. Furthermore, we plan on using the
+          IBM Food Trust powered Blockchain technology to provide full
+          transparency along the value chain for each batch produced on our
+          partner farms. With that, we’ll be eliminating any blind spots in the
+          quality and journey of our beans. Whatever the production and
+          transparency requirements, we will meet your standard.
         </Paragraph>
         <Paragraph>
           Our beans are low in cadmium, which is important for our customers
